@@ -1,6 +1,4 @@
-@font-face {font-family: Merriweather; src: url("font/Merriweather-Regular.otf")}
-
-body {font-family: Merriweather sans-serif}
+body {font-family: verdana sans-serif}
 
 .navbar {
     width: 100%;
