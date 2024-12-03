@@ -1,4 +1,6 @@
-body {font-family: verdana sans-serif}
+body {
+    font-family: verdana, sans-serif;
+}
 
 .navbar {
     width: 100%;
@@ -23,9 +25,6 @@ body {font-family: verdana sans-serif}
 .crnt_pg:hover {
     background-color: rgb(0, 105, 146);
     text-shadow: 5px 5px 10px rgb(0, 0, 0);
-    .crnt_pg::before {
-        content: ">"
-    }
 }
 .navbar_btn:hover {
     background-color: rgb(37, 37, 37);
@@ -42,6 +41,17 @@ body {font-family: verdana sans-serif}
 }
 .pg_info:hover {
     text-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+.pg {
+    float: right;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    text-shadow: 0px 0px 10px black;
+    transition: .3s;
+}
+.pg:hover {
+    text-shadow: 5px 5px 10px black
 }
 .pg_title {
     float: right;
@@ -65,8 +75,10 @@ header {
 }
 header:hover {
     text-shadow: 5px 5px 10px black;
-    font-size: 33px;
+    font-size: 40px;
+    padding: 45px;
 }
-.div1 {
-    padding: 30px;
+#div {
+    padding: 50px;
+    font-size: 20px;
 }
