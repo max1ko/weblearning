@@ -1,10 +1,38 @@
 body {
     font-family: verdana, sans-serif;
+    background: 
+        radial-gradient(
+            circle at 50% 0,
+            rgba(140, 0, 255, 0.5),
+            rgba(0, 0, 0, 0) 70.71%
+        ),
+        radial-gradient(
+            circle at 6.7% 75%,
+            rgba(17, 0, 255, 0.5),
+            rgba(0, 0, 0, 0) 70.71%
+        ),
+        radial-gradient(
+            circle at 93.3% 75%,
+            rgba(204, 0, 255, 0.5),
+            rgba(0, 0, 0, 0) 70.71%
+        ),
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(200, 200, 200, 0.5),
+            rgba(0, 0, 0, 0) 70.71%
+        ),
+        rgb(6, 0, 37);
 }
 
 .navbar {
     width: 100%;
-    background-color: rgb(80, 80, 80);
+    background:
+    radial-gradient(
+        circle at 50% 50%,
+        rgba(153, 0, 255, 0.3),
+        rgba(0, 0, 0, 0) 90.71%
+    ),
+    rgba(80, 80, 80, 0.5);
     overflow: auto;
     border-radius: 5px;
 }
@@ -19,15 +47,15 @@ body {
     border-radius: 5px;
 }
 .crnt_pg {
-    background-color: rgb(0, 167, 233);
-    box-shadow: 5px 5px 10px rgb(75, 75, 75) inset;
+    background-color: rgba(0, 4, 233, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 1, 68, 0.5) inset;
 }
 .crnt_pg:hover {
-    background-color: rgb(0, 105, 146);
+    background-color: rgba(0, 3, 168, 0.5);
     text-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
 .navbar_btn:hover {
-    background-color: rgb(37, 37, 37);
+    background-color: rgba(37, 37, 37, 0.5);
     text-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
 .pg_info {
@@ -35,7 +63,7 @@ body {
     color: white;
     padding: 10px;
     font-size: 20px;
-    background-color: rgb(37, 37, 37);
+    background-color: rgba(37, 37, 37, 0.5);
     text-shadow: 0px 0px 10px rgb(0, 0, 0);
     transition: .3s;
 }
@@ -67,18 +95,26 @@ body {
 }
 header {
     text-align: center;
-    text-shadow: 0px 0px 10px black;
-    background-color: rgb(147, 228, 220);
+    text-shadow: 0px 0px 15px rgb(0, 0, 0);
+    background:
+        radial-gradient(
+            circle at 0% 0%,
+            rgba(255, 0, 128, 0.25),
+            rgba(0, 0, 0, 0) 90.71%
+        ),
+        rgba(132, 0, 255, 0.25);
     font-size: 30px;
+    color: white;
     padding: 30px;
-    transition: .3s
+    transition: 0.3s
 }
 header:hover {
-    text-shadow: 5px 5px 10px black;
+    text-shadow: 10px 10px 15px rgb(0, 0, 0);
     font-size: 40px;
     padding: 45px;
 }
 #div {
     padding: 50px;
     font-size: 20px;
+    color: white;
 }
