@@ -26,10 +26,12 @@ body {
     background-attachment: fixed;
 }
 .navbar {
-    background-color: rgb(86, 0, 156);
+    position: fixed;
+    top: 5px;
+    background-color: rgb(73, 0, 156);
     width: 100%;
     overflow: auto;
-    z-index: 5;
+    z-index: 3;
 }
 .navbar a {
     float: left;
@@ -66,7 +68,7 @@ body {
     color: white;
     padding: 10px;
     font-size: 20px;
-    background-color: rgba(37, 37, 37, 0.5);
+    background-color: rgba(37, 37, 37, 0.7);
     text-shadow: 0px 0px 10px rgb(0, 0, 0);
     transition: .3s;
 }
@@ -89,43 +91,73 @@ body {
     height: 100%;
     width: 250px;
     position: fixed;
-    z-index: -1;
+    z-index: 2;
     overflow-y: scroll;
-    top: 0;
-    bottom: 0;
-    left: 0;
     background-color: rgba(37, 0, 107, 0.1);
     transition: 0.5s;
     padding-top: 60px;
-    margin-top: 15px;
     backdrop-filter: blur(15px);
+    margin-top: -15px;
 }
 #main {
-    margin-left: 250px;
+    margin-left: 270px;
+    margin-top: 65px;
 }
-#s {
+#sidenav a {
     text-decoration: none;
     text-align: center;
     width: 80%;
+    height: 20px;
     padding: 5px;
     font-size: 20px;
-    background-color: rgb(36, 36, 36);
     color: white;
-    margin: auto;
+    background-color: rgb(70, 70, 70);
+    border-radius: 25px;
+    margin-left: 25px;
+    z-index: 5;
+    display: block;
 }
-#crnt {
-    text-decoration: none;
+#sidenav .crnt {
+    background-color: rgb(0, 120, 255);
+}
+#t {
+    font-size: 25px;
     text-align: center;
-    width: 80%;
-    padding: 5px;
-    font-size: 20px;
-    background-color: rgb(0, 119, 255);
     color: white;
-    margin: auto;
+    margin-bottom: 10px;
+    margin-top: -50px;
 }
-a {
-    text-decoration: none;
+.h {
     color: white;
+    font-size: 35px;
+}
+#div {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+code {
+    background-color: rgb(80, 80, 80);
+    border-radius: 7px;
+    padding: 3px;
+    font-size: 17px;
+    line-height: 2;
+}
+.acs {
+    background-color: rgba(0, 184, 0, 0.8);
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    backdrop-filter: blur(15px);
+    margin-bottom: 15px;
+}
+#td {
+    text-decoration: underline;
+    font-weight: bold;
+}
+ul {
+    line-height: 2.5;
 }
 ::-webkit-scrollbar {
     width: 15px;
