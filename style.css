@@ -22,6 +22,8 @@ body {
             rgba(0, 0, 0, 0) 70.71%
         ),
         rgb(6, 0, 37);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .navbar {
     background-color: rgba(174, 0, 255, 0.1);
@@ -45,9 +47,18 @@ body {
     background-color: rgba(0, 3, 168, 0.5);
     text-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
-.navbar_btn:hover {
+#navbar_btn:hover {
     background-color: rgba(37, 37, 37, 0.5);
     text-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+.html:hover {
+    color: rgb(255, 120, 120);
+}
+.css:hover {
+    color: rgb(120, 255, 120);
+}
+.js:hover {
+    color: rgb(120, 120, 255);
 }
 .pg_info {
     float: right;
@@ -86,7 +97,7 @@ header {
     font-size: 30px;
     color: white;
     padding: 30px;
-    transition: 0.3s
+    transition: 0.3s;
 }
 header:hover {
     text-shadow: 10px 10px 15px rgb(0, 0, 0);
@@ -95,7 +106,35 @@ header:hover {
     padding: 45px;
 }
 #div {
+    text-align: center;
     padding: 50px;
-    font-size: 20px;
+    font-size: 25px;
     color: white;
+    line-height: 2;
+    margin-bottom: -60px;
+    transition: .2s;
+    text-shadow: 5px 5px 15px black;
+}
+#html, #css, #js{
+    border-radius: 25px;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    text-shadow: none;
+    box-shadow: 5px 5px 15px black;
+    transition: .2s;
+}
+#html {
+    background-color: rgb(255, 120, 120);
+}
+#html:hover, #css:hover, #js:hover {
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-shadow: 0px 0px 15px white;
+}
+#css {
+    background-color: rgb(120, 255, 120)
+}
+#js {
+    background-color: rgb(120, 120, 255)
 }
