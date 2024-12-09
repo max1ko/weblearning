@@ -138,3 +138,16 @@ header:hover {
 #js {
     background-color: rgb(120, 120, 255)
 }
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(221, 221, 221); 
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(145, 145, 145);
+    border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 100, 100); 
+}
