@@ -42,7 +42,75 @@
         <li>Текстові повідомлення SMS з посиланнями <code>sms:</code>;</li>
         <li>Код JavaScript, який можна запустити з посиланнями <code>javascript:</code>.</li>
     </ul></div><br>
-    <div id="div"><code>download</code></div>
+    <div id="div"><code>download</code><br><br>
+    Примушує браузер думати, що вказаним посиланням є завантаження. Це може бути використано з або без 
+    значення <code>download</code>:
+    <ul>
+        <li>Без значення, браузер запропонує ім'я файлу/розширення, створене з різних джерел;</li>
+        <li><code>filename</code>: вказування значення буде вважати його за ім'я файлу. Символи <code>/</code> та 
+        <code>\</code> замінюються підкресленням (<code>_</code>). Файлові системи можуть заборонити деякі 
+        символи в назвах файлів, тому браузери по можливості відредагують його назву.</li>
+    </ul></div><br>
+    <div id="div"><code>target</code><br><br>
+    Де відображати пов'язану адресу як назву для <span id="td">контексту перегляду</span> (вкладка, вікно чи <code>&lt;iframe&gt;</code>). 
+    Дані ключові слова мають спеціальне значення для відкриття посилання:
+    <ul>
+        <li><code>_self</code>: поточний контекст перегляду (за замовчуванням);</li>
+        <li><code>_blank</code>: зазвичай це нова вкладка, але користувач може налаштувати свій браузер щоб 
+        замість цього відкривати нове вікно.</li>
+    </ul></div>
+    <h1 class="h">Сумісність</h1>
+    <div id="div">Таблиця версій браузерів, з яких почалась підтримка елементу &lt;a&gt; та його атрибутів, згаданих в статті:</div>
+    <table>
+        <tr>
+            <th></th>
+            <th><i class="fa fa-chrome"></i><br>Google Chrome</th>
+            <th><i class="fa-brands fa-firefox-browser"></i><br>Mozilla Firefox</th>
+            <th><i class="fa fa-edge"></i><br>Microsoft Edge</th>
+            <th><i class="fa fa-opera"></i><br>Opera</th>
+            <th><i class="fa fa-safari"></i><br>Safari</th>
+        </tr>
+        <tr>
+            <td><code style="background: 0;">&lt;a&gt;</code></td>
+            <td>1</td>
+            <td>1</td>
+            <td>12</td>
+            <td>15</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><code style="background: 0;">href</code></td>
+            <td>1</td>
+            <td>1</td>
+            <td>12</td>
+            <td>15</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><code style="background: 0;">href="sms:"</code></td>
+            <td><i class="fa fa-circle-xmark"></i></td>
+            <td>12</td>
+            <td><i class="fa fa-circle-xmark"></i></td>
+            <td><i class="fa fa-circle-xmark"></i></td>
+            <td><i class="fa fa-circle-xmark"></i></td>
+        </tr>
+        <tr>
+            <td><code style="background: 0;">download</code></td>
+            <td>14</td>
+            <td>20</td>
+            <td>18</td>
+            <td>15</td>
+            <td>10.1</td>
+        </tr>
+        <tr>
+            <td><code style="background: 0;">target</code></td>
+            <td>1</td>
+            <td>1</td>
+            <td>12</td>
+            <td>15</td>
+            <td>1</td>
+        </tr>
+    </table>
 </div>
 <script src="../script.js"></script>
 </body>
