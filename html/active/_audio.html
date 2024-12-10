@@ -3,7 +3,7 @@
 <head>
 
 <meta charset="utf-8">
-<title>HTML_&lt;area&gt;</title>
+<title>HTML_&lt;audio&gt;</title>
 <script src="https://kit.fontawesome.com/4b7e57b60c.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="../style.css">
 
@@ -15,10 +15,10 @@
         <a href="_a.html">&lt;a&gt;</a><br>
         <a href="_abbr.html">&lt;abbr&gt;</a><br>
         <a href="_adress.html">&lt;adress&gt;</a><br>
-        <a href="_area.html" class="crnt">&lt;area&gt;</a><br>
+        <a href="_area.html">&lt;area&gt;</a><br>
         <a href="_article.html">&lt;article&gt;</a><br>
         <a href="_aside.html">&lt;aside&gt;</a><br>
-        <a href="_audio.html">&lt;audio&gt;</a><br>
+        <a href="_audio.html" class="crnt">&lt;audio&gt;</a><br>
         <a href="_b.html">&lt;b&gt;</a><br>
         <a href="_blockquote.html">&lt;blockquote>&gt;</a><br>
         <a href="_body.html">&lt;body&gt;</a><br>
@@ -42,11 +42,17 @@
 </div>
 
 <div id="main">
-    <h1 class="h">HTML Елемент &lt;area&gt;</h1>
+    <h1 class="h">HTML Елемент &lt;audio&gt;</h1>
     <div class="acs"><i class="fa fa-check"></i>   Загальнодоступно з <span id="td">липня 2015 року</span></div>
-    <div id="div"><code>&lt;area&gt;</code> - елемент HTML, який визначає область всередині <code>&lt;map&gt;</code> 
-    який має попередньо визначені області для клацання. Це дозволяє геометричним областям бути пов'язаними з гіперпосиланнями.<br><br>
-    Елемент <code>&lt;area&gt;</code> може бути розміщений тільки всередині елементу <code>&lt;map&gt;</code>.</div>
+    <div id="div"><code>&lt;audio&gt;</code> використовується для вбудовування аудіо-елементів у документі. Він може 
+    мати один чи більше джерел аудіо, вказаних за допомогою атрибуту <code>src</code>.</div>
+    <h1 class="h">Атрибути</h1>
+    <div id="div"><code>controls</code><br><br>
+    Якщо цей атрибут вказаний, браузер надасть користувачу доступ до налаштування відтворення аудіо. До налаштувань входять 
+    контроль гучності звуку чи пауза/повторне відтворення аудіо-файлу.<br><br><code>loop</code><br><br>
+    Логічний атрибут: автоматично програває аудіо з початку, якщо він доходить до кінця.<br><br><code>muted</code><br><br>
+    Логічний атрибут: повністю заглушує звук. За замовчуванням функція вимкнена.<br><br><code>src</code><br><br>
+    Посилання на аудіо-файл для відтворення.</div>
     <h1 class="h">Сумісність</h1>
     <table>
         <tr>
@@ -58,36 +64,44 @@
             <th><i class="fa fa-safari"></i><br>Safari</th>
         </tr>
         <tr>
-            <td><code style="background: 0;">&lt;area&gt;</code></td>
-            <td>1</td>
-            <td>1</td>
+            <td><code style="background: 0;">&lt;audio&gt;</code></td>
+            <td>3</td>
+            <td>3.5</td>
             <td>12</td>
-            <td>15</td>
-            <td>1</td>
+            <td>10.5</td>
+            <td>3.1</td>
         </tr>
         <tr>
-            <td><code style="background: 0;">href</code></td>
-            <td>1</td>
-            <td>1</td>
+            <td><code style="background: 0;">controls</code></td>
+            <td>3</td>
+            <td>3.5</td>
             <td>12</td>
-            <td>15</td>
-            <td>1</td>
+            <td>10.5</td>
+            <td>3.1</td>
         </tr>
         <tr>
-            <td><code style="background: 0;">download</code></td>
-            <td>54</td>
-            <td>20</td>
+            <td><code style="background: 0;">loop</code></td>
+            <td>3</td>
+            <td>11</td>
             <td>12</td>
-            <td>41</td>
-            <td>10.1</td>
+            <td>10.5</td>
+            <td>3.1</td>
         </tr>
         <tr>
-            <td><code style="background: 0;">target</code></td>
-            <td>1</td>
-            <td>1</td>
-            <td>12</td>
+            <td><code style="background: 0;">muted</code></td>
             <td>15</td>
-            <td>1</td>
+            <td>11</td>
+            <td>18</td>
+            <td>15</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td><code style="background: 0;">src</code></td>
+            <td>3</td>
+            <td>3.5</td>
+            <td>12</td>
+            <td>10.5</td>
+            <td>3.1</td>
         </tr>
     </table>
 </div>

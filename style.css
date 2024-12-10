@@ -138,6 +138,44 @@ header:hover {
 #js {
     background-color: rgb(120, 120, 255)
 }
+input {
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    font-size: 17px;
+    margin-top: 3px;
+    margin-left: 710px;
+}
+.navbar #i {
+    position: absolute;
+    font-size: 17px;
+    color: white;
+    top: 20px;
+    left: 890px;
+}
+.i {
+    margin-left: -100px;
+}
+#sdiv {
+    position: absolute;
+    background-color: blueviolet;
+    border: 3px solid black;
+    width: 200px;
+    height: 200px;
+    overflow-y: scroll;
+    margin-left: 910px;
+    display: none;
+}
+#sul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.sli a {
+    background-color: rgb(85, 85, 85);
+    border: 2px solid black;
+    margin: 3px;
+}
 ::-webkit-scrollbar {
     width: 15px;
 }
